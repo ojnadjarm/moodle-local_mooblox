@@ -34,8 +34,8 @@ const NATURE = {
 };
 /** Campfire crackle pops cut from the AntumDeluge recording (start, end s). */
 const CRACKLES = [[0, 0.7], [0.7, 1.4], [1.4, 2.1], [2.1, 2.87]];
-const MOOBLOX = { pack: 'MOOBLOX synthesised duck quack (tools/intake-audio.mjs)', author: 'MOOBLOX contributors', source: 'https://github.com/ojnadjarm/mooblox' };
-const WARP = { pack: 'MOOBLOX synthesised warp and lift whooshes (tools/intake-audio.mjs)', author: 'MOOBLOX contributors', source: 'https://github.com/ojnadjarm/mooblox' };
+const MOOBLOX = { pack: 'MOOBLOX synthesised duck quack (tools/intake-audio.mjs)', author: 'MOOBLOX contributors', source: 'https://github.com/ojnadjarm/moodle-local_mooblox' };
+const WARP = { pack: 'MOOBLOX synthesised warp and lift whooshes (tools/intake-audio.mjs)', author: 'MOOBLOX contributors', source: 'https://github.com/ojnadjarm/moodle-local_mooblox' };
 /** A rising whoosh: a gliding tone from f0 to f1 Hz plus a shimmer an octave and a half up that flutters, swelling and fading over len s. */
 const whoosh = (f0, f1, len) =>
   `aevalsrc='(0.55*sin(2*PI*(${f0}*t+(${f1}-${f0})*t*t/(2*${len})))+0.3*sin(2*PI*(${f0 * 2.8}*t+(${f1 * 2.8}-${f0 * 2.8})*t*t/(2*${len})))*(0.5+0.5*sin(2*PI*16*t)))*sin(PI*min(t/${len},1))^0.8':s=44100:d=${len},highpass=f=120,aecho=0.6:0.5:60:0.3`;

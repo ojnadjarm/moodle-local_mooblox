@@ -40,11 +40,11 @@ the plugin's ajax web services. No external service, account or token is needed.
 
 `client/dist/` holds the built world client (`mooblox.js`, its web worker and assets). Its source is
 the TypeScript project in the `client/` folder of the public repository
-<https://github.com/ojnadjarm/mooblox> (`client/src`, with `package.json` and `package-lock.json`).
+<https://github.com/ojnadjarm/moodle-local_mooblox> (`client/src`, with `package.json` and `package-lock.json`).
 To rebuild it, with Node.js 22 or later:
 
-    git clone https://github.com/ojnadjarm/mooblox.git
-    cd mooblox/client
+    git clone https://github.com/ojnadjarm/moodle-local_mooblox.git
+    cd moodle-local_mooblox/client
     npm ci
     npm run build
 

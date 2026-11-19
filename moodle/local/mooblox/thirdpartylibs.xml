@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<libraries>
+  <library>
+    <location>client/dist</location>
+    <name>three.js</name>
+    <description>JavaScript 3D library (core, GLTFLoader, postprocessing passes, BufferGeometryUtils), bundled into client/dist/mooblox.js and its build worker.</description>
+    <version>0.186.1</version>
+    <license>MIT</license>
+    <repository>https://github.com/mrdoob/three.js</repository>
+    <copyrights>
+      <copyright>2010-2026 three.js authors</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist</location>
+    <name>three-mesh-bvh</name>
+    <description>Bounding volume hierarchy for three.js meshes, used for character collision; bundled into client/dist/mooblox.js and its build worker.</description>
+    <version>0.9.16</version>
+    <license>MIT</license>
+    <repository>https://github.com/gkjohnson/three-mesh-bvh</repository>
+    <copyrights>
+      <copyright>2018 Garrett Johnson</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist</location>
+    <name>meshoptimizer decoder</name>
+    <description>Mesh decoder (shipped with three.js as examples/jsm/libs/meshopt_decoder.module.js), bundled into client/dist/mooblox.js.</description>
+    <version>1.1</version>
+    <license>MIT</license>
+    <repository>https://github.com/zeux/meshoptimizer</repository>
+    <copyrights>
+      <copyright>2016-2026 Arseny Kapoulkine</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/kenney-blocky.glb</location>
+    <name>Kenney Blocky Characters</name>
+    <description>Avatar model (assets/kenney-blocky.glb) and its skins (assets/skins).</description>
+    <version>2.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/blocky-characters</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/kit-hd/nature</location>
+    <name>Kenney Nature Kit</name>
+    <description>Scenery models, packed into assets/kit.glb and bevelled in assets/kit-hd/nature.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/nature-kit</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/kit-hd/town</location>
+    <name>Kenney Fantasy Town Kit</name>
+    <description>Scenery models, packed into assets/kit.glb and bevelled in assets/kit-hd/town.</description>
+    <version>2.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/fantasy-town-kit</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/kit-hd/suburb</location>
+    <name>Kenney City Kit (Suburban)</name>
+    <description>Scenery models, packed into assets/kit.glb and bevelled in assets/kit-hd/suburb.</description>
+    <version>2.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/city-kit-suburban</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/kit-hd/pirate</location>
+    <name>Kenney Pirate Kit</name>
+    <description>Scenery models, packed into assets/kit.glb and bevelled in assets/kit-hd/pirate.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/pirate-kit</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/cosmetics/pets.glb</location>
+    <name>Kenney Cube Pets</name>
+    <description>Pet models.</description>
+    <version>2.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/cube-pets</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/detail</location>
+    <name>ambientCG textures</name>
+    <description>Grass004, Foliage001, Planks021, Rock030, RoofingTiles006, Plaster001, Bricks059 and Ground054, packed into detail-a.png and detail-b.png.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://ambientcg.com</repository>
+    <copyrights>
+      <copyright>ambientCG (ambientcg.com)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Kenney Impact Sounds</name>
+    <description>Sound effects.</description>
+    <version>1.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/impact-sounds</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Kenney Interface Sounds</name>
+    <description>Sound effects.</description>
+    <version>1.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/interface-sounds</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Kenney RPG Audio</name>
+    <description>Sound effects.</description>
+    <version>1.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/rpg-audio</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Kenney Music Jingles</name>
+    <description>Music jingles.</description>
+    <version>1.0</version>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://kenney.nl/assets/music-jingles</repository>
+    <copyrights>
+      <copyright>Kenney (kenney.nl)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Ambient bird sounds</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/ambient-bird-sounds</repository>
+    <copyrights>
+      <copyright>isaiah658</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Bluebonnet (looped)</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/bluebonnet</repository>
+    <copyrights>
+      <copyright>Kistol</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Cat purr &amp; meow</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/cat-purr-meow</repository>
+    <copyrights>
+      <copyright>Kerzoven</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Catmint (looped)</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/catmint</repository>
+    <copyrights>
+      <copyright>Kistol</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Dog barking mono</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/dog-barking-mono</repository>
+    <copyrights>
+      <copyright>Brandon Morris (HaelDB)</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Fire Crackling</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/fire-crackling</repository>
+    <copyrights>
+      <copyright>AntumDeluge</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Fireplace Sound loop</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/fireplace-sound-loop</repository>
+    <copyrights>
+      <copyright>PagDev</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Happy Lullaby (song17)</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/happy-lullaby-song17</repository>
+    <copyrights>
+      <copyright>cynicmusic</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Kitten mew</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/kitten-mew</repository>
+    <copyrights>
+      <copyright>AntumDeluge</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Meow</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/meow</repository>
+    <copyrights>
+      <copyright>IgnasD</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Sea and river wave sounds</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/sea-and-river-wave-sounds</repository>
+    <copyrights>
+      <copyright>RandomMind</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Solo Seagull Sound Effects</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/solo-seagull-sound-effects</repository>
+    <copyrights>
+      <copyright>Rango Mango</copyright>
+    </copyrights>
+  </library>
+  <library>
+    <location>client/dist/assets/audio</location>
+    <name>Water waves</name>
+    <description>Sound from OpenGameArt.org.</description>
+    <license>CC0</license>
+    <licenseversion>1.0</licenseversion>
+    <repository>https://opengameart.org/content/water-waves</repository>
+    <copyrights>
+      <copyright>transitking</copyright>
+    </copyrights>
+  </library>
+</libraries>

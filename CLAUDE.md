@@ -728,3 +728,10 @@ world client in `client/`. Design: `ARCHITECTURE.md`. Plan and tickets:
   budgets); the SwiftShader stress rig, its cold first-visit run, `--no-stress`, `--browser` and the low 4x CPU / 20 ms budget are gone
   (all tiers: worst frame 50 ms, memory 800 MB, crossings 34 ms / 0 pops / 0 inline). `--throttle N` stays for diagnosis.
   `tools/crossing.mjs` rigs low (unthrottled), medium, high; `tools/stress-start.mjs` deleted. Add no new device tests.
+- T1777, 2026-11-19, version 2026111900 (release 0.1.1), plugins directory review #1 #2 #3 #6: the plugin root ships `LICENSE` (GPL-3),
+  `README.md` (purpose, requirements, setup, client source = this public repo's `client/` + `npm ci && npm run build`) and
+  `thirdpartylibs.xml` (three.js, three-mesh-bvh, meshoptimizer decoder + 24 CC0 asset packs from `assets/LICENSES.csv`; update it when a
+  dependency or pack changes). No inline `<script>`: play.php and index.php call `js_call_amd('local_mooblox/boot', 'init', [bundleurl])`
+  (`amd/src/boot.js`, built with `mgrunt` in the 5.2 tree), which adds the module script; the config is text in
+  `<div id="mooblox-config" hidden>` (too big for js_call_amd args), so `main.ts` is unchanged. Favicon link from `templates/favicon.mustache`.
+  Resubmission zip `~/drop/T1777/local_mooblox-2026111900.zip` (`git archive HEAD:moodle/local/mooblox --prefix=mooblox/`).

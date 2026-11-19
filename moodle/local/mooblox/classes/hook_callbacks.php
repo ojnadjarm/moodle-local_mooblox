@@ -114,7 +114,7 @@ class hook_callbacks {
 
         if (in_array($PAGE->pagetype, ['local-mooblox-play', 'local-mooblox-index'], true)) {
             $href = $OUTPUT->image_url('favicon', 'local_mooblox')->out(false);
-            $hook->add_html('<link rel="icon" type="image/svg+xml" href="' . s($href) . '">');
+            $hook->add_html($OUTPUT->render_from_template('local_mooblox/favicon', ['href' => $href]));
         }
     }
 

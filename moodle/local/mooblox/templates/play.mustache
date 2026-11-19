@@ -20,8 +20,7 @@
     Shell of the full-screen world: the client mounts into the root and reads the JSON config.
 
     Context variables required for this template:
-    * configjson - JSON config for the client, HTML-safe encoded
-    * bundleurl - URL of the client module bundle
+    * configjson - JSON config for the client, read by the client bundle
     * logourl - URL of the Mooblox logo for the loading screen
     * loading - loading screen text
     * creditby - credit line for the author
@@ -30,7 +29,6 @@
     Example context (json):
     {
         "configjson": "{\"wwwroot\":\"https://example.com\",\"courseid\":2,\"sesskey\":\"abc\",\"firstname\":\"Mia\",\"avatar\":\"\",\"rev\":1}",
-        "bundleurl": "https://example.com/local/mooblox/client/dist/mooblox.js?rev=1",
         "logourl": "https://example.com/theme/image.php/boost/local_mooblox/1/logo",
         "loading": "Building your world...",
         "creditby": "by Oscar Nadjar",
@@ -46,5 +44,4 @@
     <p class="local-mooblox-loading-text">{{loading}}</p>
     <div class="local-mooblox-loading-bar"></div>
 </div>
-<script type="application/json" id="mooblox-config">{{{configjson}}}</script>
-<script type="module" src="{{bundleurl}}"></script>
+<div id="mooblox-config" hidden>{{configjson}}</div>

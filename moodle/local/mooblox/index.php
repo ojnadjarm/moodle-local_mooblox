@@ -69,13 +69,15 @@ foreach ($keys as $key) {
 $config['strings']['look_ctrl'] = get_string('look_ctrl', 'local_mooblox', '{ctrl}');
 $config['strings']['look_release'] = get_string('look_release', 'local_mooblox', '{ctrl}');
 
+$bundleurl = new moodle_url('/local/mooblox/client/dist/mooblox.js', ['rev' => $rev]);
+$PAGE->requires->js_call_amd('local_mooblox/boot', 'init', [$bundleurl->out(false)]);
+
 echo $OUTPUT->header();
 echo $OUTPUT->render_from_template('local_mooblox/hub', [
     'title' => get_string('hub_title', 'local_mooblox'),
     'courses' => array_map(fn(array $c): array => ['fullname' => $c['fullname'], 'url' => $c['url']], $courses),
     'empty' => get_string('hub_empty_text', 'local_mooblox'),
     'configjson' => json_encode($config, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT),
-    'bundleurl' => (new moodle_url('/local/mooblox/client/dist/mooblox.js', ['rev' => $rev]))->out(false),
     'logourl' => $OUTPUT->image_url('logo', 'local_mooblox')->out(false),
     'loading' => get_string('loading', 'local_mooblox'),
     'creditby' => get_string('credit_by', 'local_mooblox'),
